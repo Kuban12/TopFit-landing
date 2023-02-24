@@ -1,0 +1,52 @@
+.priceList {
+  width: 100%;
+	height: 100vh;
+	margin: 0;
+  background: #7c1983;
+  background: -webkit-linear-gradient(
+    to right,
+    #7c1983,
+    #2f15c0
+  );
+  background: linear-gradient(
+    to right,
+    #7c1983, 
+    #2f15c0
+  );
+}
+
+.priceList_title1{
+	font-size: larger;
+	font-family: 'Edu TAS Beginner';
+	margin: 0 auto;
+	margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.priceList_container {
+  position: relative;
+
+	overflow: auto;
+  top: 10vh;
+  width: 90%;
+	height: 90vh;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+table{
+  margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 800px){
+
+  .priceList_container{
+    width: 720px;
+	}
+};

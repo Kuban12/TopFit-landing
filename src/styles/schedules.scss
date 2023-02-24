@@ -1,0 +1,106 @@
+.schedules {
+  width: 100%;
+	height: 200vh;
+	margin: 0;
+  background: #7c1983;
+  background: -webkit-linear-gradient(
+    to right,
+    #7c1983,
+    #2f15c0
+  );
+  background: linear-gradient(
+    to right,
+    #7c1983, 
+    #2f15c0
+  );
+}
+.schedule_title1{
+	font-size: larger;
+	font-family: 'Edu TAS Beginner';
+	margin: 0 auto;
+	margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.schedules_container {
+  position: relative;
+
+	overflow: auto;
+  top: 10vh;
+  width: 90%;
+	height: 90vh;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+table {
+	position: relative;
+	width: 90%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+  font-family: 'Edu TAS Beginner';
+	padding: 5px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+
+.schedule_days{
+	font-family: 'Edu TAS Beginner';
+	padding: 5px;
+	background-color: rgba(255,255,255,0.2);
+	text-align: center;
+	color: #000;
+}
+
+
+
+@media screen and (min-width: 1000px){
+
+  .schedules{
+		height: 100vh;
+		display: flex;
+    flex-direction: row;
+	}
+};

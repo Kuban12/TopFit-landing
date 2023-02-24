@@ -1,0 +1,1090 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap");
+body {
+  font-family: "Tahoma";
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background: #9400a5;
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00157f;
+  height: 20%;
+  width: 2px;
+}
+
+.hoverLink:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: rgb(205, 218, 65);
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 8vh;
+  -webkit-animation: color-change 5s infinite linear;
+          animation: color-change 5s infinite linear;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 100%);
+  }
+  5% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 95%);
+  }
+  10% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 90%);
+  }
+  15% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 85%);
+  }
+  20% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 80%);
+  }
+  25% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 75%);
+  }
+  30% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 70%);
+  }
+  35% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 65%);
+  }
+  40% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 60%);
+  }
+  45% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 55%);
+  }
+  50% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 50%);
+  }
+  55% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 55%);
+  }
+  60% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 60%);
+  }
+  65% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 65%);
+  }
+  70% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 70%);
+  }
+  75% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 75%);
+  }
+  80% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 80%);
+  }
+  85% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 85%);
+  }
+  90% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 90%);
+  }
+  95% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 95%);
+  }
+  100% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 100%);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 100%);
+  }
+  5% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 95%);
+  }
+  10% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 90%);
+  }
+  15% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 85%);
+  }
+  20% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 80%);
+  }
+  25% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 75%);
+  }
+  30% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 70%);
+  }
+  35% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 65%);
+  }
+  40% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 60%);
+  }
+  45% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 55%);
+  }
+  50% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 50%);
+  }
+  55% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 55%);
+  }
+  60% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 60%);
+  }
+  65% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 65%);
+  }
+  70% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 70%);
+  }
+  75% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 75%);
+  }
+  80% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 80%);
+  }
+  85% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 85%);
+  }
+  90% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 90%);
+  }
+  95% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 95%);
+  }
+  100% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 100%);
+  }
+}
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navLogo, .navMenuIcon {
+  height: 70%;
+  background-color: rgb(255, 255, 255);
+  border: solid rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+}
+
+.navMenuIcon {
+  height: 50%;
+  border-radius: 15%;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.navMenuIcon.down {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu {
+  position: fixed;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 92vh;
+  top: 8%;
+  right: 0px;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu.active ~ .navMenuIcon {
+  width: 500px;
+}
+
+.menu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu_background {
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__header {
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+  border-top: 1px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+.navList {
+  display: none;
+  color: white;
+  width: 60%;
+}
+.navList li {
+  font-family: "Edu TAS Beginner";
+}
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Edu TAS Beginner";
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+}
+
+.menuItem {
+  margin-bottom: 4rem;
+  font-size: larger;
+}
+
+.menuItems:hover {
+  background: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 800px) {
+  .navMenuIcon {
+    display: none;
+  }
+  .navList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+* {
+  margin: 0;
+}
+
+.header_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+video {
+  position: fixed;
+  top: 8vh;
+  z-index: -2;
+  width: 100%;
+  height: 92vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.header_content li {
+  font-family: "Edu TAS Beginner";
+  font-size: small;
+  color: white;
+  margin: 1rem auto;
+}
+.header_content .span {
+  width: 80%;
+  height: 1px;
+  background: white;
+}
+
+@media screen and (min-width: 800px) {
+  .header_content li {
+    font-size: large;
+  }
+}
+.jessica {
+  height: 100vh;
+  width: 100%;
+}
+
+.stuff {
+  width: 100%;
+  height: 95vh;
+  background: #b92b27;
+  background: -webkit-gradient(linear, left top, right top, from(#b92b27), to(#1565c0));
+  background: linear-gradient(to right, #b92b27, #1565c0);
+}
+
+.stuff_title {
+  font-family: "Edu TAS Beginner";
+  font-size: xx-large;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.carousel {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 70%;
+  height: 70vh;
+  cursor: pointer;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.stuff_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stuff_name {
+  font-family: "Edu TAS Beginner";
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+.card--active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 99;
+}
+
+.card--left {
+  -webkit-transform: translateX(-95%) scale(0.8);
+          transform: translateX(-95%) scale(0.8);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  opacity: 0.3;
+}
+
+.card--right {
+  -webkit-transform: translateX(95%) scale(0.8);
+          transform: translateX(95%) scale(0.8);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 50%;
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 40%;
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .card {
+    width: 30%;
+    height: 80vh;
+  }
+}
+.schedules {
+  width: 100%;
+  height: 200vh;
+  margin: 0;
+  background: #7c1983;
+  background: -webkit-gradient(linear, left top, right top, from(#7c1983), to(#2f15c0));
+  background: linear-gradient(to right, #7c1983, #2f15c0);
+}
+
+.schedule_title1 {
+  font-size: larger;
+  font-family: "Edu TAS Beginner";
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.schedules_container {
+  position: relative;
+  overflow: auto;
+  top: 10vh;
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+table {
+  position: relative;
+  width: 90%;
+  border-collapse: collapse;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  font-family: "Edu TAS Beginner";
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.schedule_days {
+  font-family: "Edu TAS Beginner";
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (min-width: 1000px) {
+  .schedules {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.priceList {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #7c1983;
+  background: -webkit-gradient(linear, left top, right top, from(#7c1983), to(#2f15c0));
+  background: linear-gradient(to right, #7c1983, #2f15c0);
+}
+
+.priceList_title1 {
+  font-size: larger;
+  font-family: "Edu TAS Beginner";
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.priceList_container {
+  position: relative;
+  overflow: auto;
+  top: 10vh;
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+table {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .priceList_container {
+    width: 720px;
+  }
+}
+.map {
+  height: 90vh;
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.map .img_container img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.direction_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  padding: 3rem 0 3rem 0;
+  width: 85%;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  background: #b92b27;
+  background: -webkit-gradient(linear, left top, right top, from(#b92b27), to(#1565c0));
+  background: linear-gradient(to right, #b92b27, #1565c0);
+}
+
+.direction_title {
+  position: absolute;
+  top: 1rem;
+  font-family: "Edu TAS Beginner";
+  font-size: xx-large;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.direction {
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.direction, .direction * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+.direction__imgBox img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.direction__title {
+  text-align: center;
+  margin-top: 15px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Lato";
+}
+.direction__content {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Lato";
+  letter-spacing: 0.1em;
+  opacity: 0;
+}
+.direction:hover .direction__imgBox {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+.direction:hover .direction__imgBox img {
+  -webkit-transform: translate(-20px, -40px) scale(1.4);
+          transform: translate(-20px, -40px) scale(1.4);
+}
+
+textarea {
+  resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.2em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+  background: #000;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  -webkit-animation: color-change 5s infinite linear;
+          animation: color-change 5s infinite linear;
+}
+
+@keyframes color-change {
+  0% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 100%);
+  }
+  5% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 95%);
+  }
+  10% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 90%);
+  }
+  15% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 85%);
+  }
+  20% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 80%);
+  }
+  25% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 75%);
+  }
+  30% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 70%);
+  }
+  35% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 65%);
+  }
+  40% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 60%);
+  }
+  45% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 55%);
+  }
+  50% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 50%);
+  }
+  55% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 55%);
+  }
+  60% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 60%);
+  }
+  65% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 65%);
+  }
+  70% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 70%);
+  }
+  75% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 75%);
+  }
+  80% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 80%);
+  }
+  85% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 85%);
+  }
+  90% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 90%);
+  }
+  95% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 95%);
+  }
+  100% {
+    background: radial-gradient(circle, rgb(139, 0, 126) 0%, rgb(21, 8, 72) 100%);
+  }
+}
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1750px);
+            transform: translateX(-1750px);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1750px);
+            transform: translateX(-1750px);
+  }
+}
+.slider {
+  background: white;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 85%;
+}
+
+.slider::before, .slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3500px;
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+@-webkit-keyframes scrolld {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(1750px);
+            transform: translateX(1750px);
+  }
+}
+@keyframes scrolld {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(1750px);
+            transform: translateX(1750px);
+  }
+}
+.slider2 {
+  background: white;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 85%;
+}
+
+.slider2::before, .slider2::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider2::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider2::before {
+  left: 0;
+  top: 0;
+}
+
+.slider2 .slide-track {
+  -webkit-animation: scrolld 40s linear infinite;
+  animation: scrolld 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3500px;
+}
+
+.slider2 .slide2 {
+  height: 100px;
+  width: 250px;
+}
