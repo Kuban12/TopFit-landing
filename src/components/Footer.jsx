@@ -4,41 +4,41 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div class="rounded-social-buttons">
+        <div className="rounded-social-buttons">
           <a
-            class="social-button facebook"
+            className="social-button facebook"
             href="https://www.facebook.com/"
             target="_blank"
           >
-            <i class="fab fa-facebook-f"></i>
+            <i className="fab fa-facebook-f"></i>
           </a>
           <a
-            class="social-button twitter"
+            className="social-button twitter"
             href="https://www.twitter.com/"
             target="_blank"
           >
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </a>
           <a
-            class="social-button linkedin"
+            className="social-button linkedin"
             href="https://www.linkedin.com/"
             target="_blank"
           >
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
           <a
-            class="social-button youtube"
+            className="social-button youtube"
             href="https://www.youtube.com/"
             target="_blank"
           >
-            <i class="fab fa-youtube"></i>
+            <i className="fab fa-youtube"></i>
           </a>
           <a
-            class="social-button instagram"
+            className="social-button instagram"
             href="https://www.instagram.com/"
             target="_blank"
           >
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
       </footer>

@@ -1,3 +1,14 @@
+.branch_title{
+  background: rgba(0,0,0,0.6);
+  font-family: 'Edu TAS Beginner';
+  font-size: xx-large;
+  text-align: center;
+  margin: 0;
+  color: white;
+  width: 85%;
+  margin: 0 auto;
+}
+
 @-webkit-keyframes scroll {  
   0% {  
    transform: translateX(0);  
@@ -17,91 +28,76 @@
  .slider {  
   background: white;  
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);  
-  height: 100px;  
+  height: 50vh;  
   margin: auto;  
   overflow: hidden;  
   position: relative;  
   width: 85%;  
  }  
- .slider::before, .slider::after {  
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);  
-  content: "";  
-  height: 100px;  
-  position: absolute;  
-  width: 200px;  
-  z-index: 2;  
- }  
- .slider::after {  
-  right: 0;  
-  top: 0;  
-  transform: rotateZ(180deg);  
- }  
- .slider::before {  
-  left: 0;  
-  top: 0;  
- }  
+ 
  .slider .slide-track {  
   -webkit-animation: scroll 40s linear infinite;  
       animation: scroll 40s linear infinite;  
   display: flex;  
-  width: calc(250px * 14);  
+  width: calc(30rem * 14);  
  }  
  .slider .slide {  
-  height: 100px;  
-  width: 250px;  
+  height: 50vh;  
+  width: 20%; 
+  
+  img{
+    height: 50vh; 
+    width: 100%; 
+    object-fit: cover;
+  };
  } 
- 
- 
 
-@-webkit-keyframes scrolld {  
+
+
+
+
+
+
+
+ @-webkit-keyframes scroll2 {  
   0% {  
-   transform: translateX(0);  
+    transform: translateX(calc(-250px * 7));  
   }  
   100% {  
-   transform: translateX(calc(250px * 7));  
+    transform: translateX(0);  
   }  
  }  
- @keyframes scrolld {  
+ @keyframes scroll2 {  
   0% {  
-   transform: translateX(0);  
+    transform: translateX(calc(-250px * 7));  
   }  
   100% {  
-   transform: translateX(calc(250px * 7));  
+    transform: translateX(0);  
   }  
  }  
- .slider2 {  
+ .sslider {  
   background: white;  
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);  
-  height: 100px;  
+  height: 50vh;  
   margin: auto;  
   overflow: hidden;  
   position: relative;  
   width: 85%;  
  }  
- .slider2::before, .slider2::after {  
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);  
-  content: "";  
-  height: 100px;  
-  position: absolute;  
-  width: 200px;  
-  z-index: 2;  
- }  
- .slider2::after {  
-  right: 0;  
-  top: 0;  
-  transform: rotateZ(180deg);  
- }  
- .slider2::before {  
-  left: 0;  
-  top: 0;  
- }  
- .slider2 .slide-track {  
-  -webkit-animation: scrolld 40s linear infinite;  
-      animation: scrolld 40s linear infinite;  
+ 
+ .sslider .sslide-track {  
+  -webkit-animation: scroll2 40s linear infinite;  
+      animation: scroll2 40s linear infinite;  
   display: flex;  
-  width: calc(250px * 14);  
+  width: calc(30rem * 14);  
  }  
- .slider2 .slide2 {  
-  height: 100px;  
-  width: 250px;  
- }  
+ .sslider .sslide {  
+  height: 50vh;  
+  width: 20%; 
+  
+  img{
+    height: 50vh; 
+    width: 100%; 
+    object-fit: cover;
+  };
+ } 
