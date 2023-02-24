@@ -955,6 +955,17 @@ textarea {
   border-color: #125688;
 }
 
+.branch_title {
+  background: rgba(0, 0, 0, 0.6);
+  font-family: "Edu TAS Beginner";
+  font-size: xx-large;
+  text-align: center;
+  margin: 0;
+  color: white;
+  width: 85%;
+  margin: 0 auto;
+}
+
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -979,33 +990,11 @@ textarea {
   background: white;
   -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 50vh;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 85%;
-}
-
-.slider::before, .slider::after {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
 }
 
 .slider .slide-track {
@@ -1014,77 +1003,67 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 3500px;
+  width: 420rem;
 }
 
 .slider .slide {
-  height: 100px;
-  width: 250px;
+  height: 50vh;
+  width: 20%;
+}
+.slider .slide img {
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@-webkit-keyframes scrolld {
+@-webkit-keyframes scroll2 {
   0% {
+    -webkit-transform: translateX(-1750px);
+            transform: translateX(-1750px);
+  }
+  100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  100% {
-    -webkit-transform: translateX(1750px);
-            transform: translateX(1750px);
-  }
 }
-@keyframes scrolld {
+@keyframes scroll2 {
   0% {
+    -webkit-transform: translateX(-1750px);
+            transform: translateX(-1750px);
+  }
+  100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  100% {
-    -webkit-transform: translateX(1750px);
-            transform: translateX(1750px);
-  }
 }
-.slider2 {
+.sslider {
   background: white;
   -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 50vh;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 85%;
 }
 
-.slider2::before, .slider2::after {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-
-.slider2::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-
-.slider2::before {
-  left: 0;
-  top: 0;
-}
-
-.slider2 .slide-track {
-  -webkit-animation: scrolld 40s linear infinite;
-  animation: scrolld 40s linear infinite;
+.sslider .sslide-track {
+  -webkit-animation: scroll2 40s linear infinite;
+  animation: scroll2 40s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 3500px;
+  width: 420rem;
 }
 
-.slider2 .slide2 {
-  height: 100px;
-  width: 250px;
+.sslider .sslide {
+  height: 50vh;
+  width: 20%;
+}
+.sslider .sslide img {
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

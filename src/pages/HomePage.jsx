@@ -9,7 +9,7 @@ import Stuff from "../components/stuff/Stuff";
 import Map from "../components/Map/Map";
 import Footer from "../components/Footer";
 
-import Video from "../videos/headerVideo.mp4";
+import Video from "../videos/headerVideo.webm";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const HomePage = () => {
       <Navbar />
       <Header />
       <Direction />
-      {/* <Branches /> */}
+      <Branches />
       <Map />
       <Stuff />
       <Footer />

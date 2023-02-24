@@ -1,5 +1,4 @@
 import React from "react";
-import Video from "../videos/headerVideo.mp4";
 
 const Header = () => {
   return (
